@@ -1,7 +1,7 @@
- </main>
+</main>
 
     <footer>
-        <p>&copy; <?= date('Y') ?> My CodeIgniter Website</p>
+        <p>&copy; <?= date('Y') ?> Simple POS System</p>
     </footer>
 </body>
 </html>
