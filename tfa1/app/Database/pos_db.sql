@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 09, 2026 at 02:39 PM
+-- Generation Time: Oct 09, 2026 at 04:34 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -44,7 +44,7 @@ INSERT INTO `customers` (`id`, `full_name`, `email`, `phone`, `created_at`) VALU
 (2, 'Maria Santos', 'maria@example.com', '09181234567', '2026-10-09 20:07:25'),
 (3, 'Jose Reyes', 'jose@example.com', '09191234567', '2026-10-09 20:07:25'),
 (4, 'Ana Garcia', 'ana@example.com', '09201234567', '2026-10-09 20:07:25'),
-(5, 'Paolo Mendoza', 'paolo@example.com', '09211234567', '2026-10-09 20:07:25');
+(5, 'Paolo Contis', 'paolo@example.com', '09211234567', '2026-10-09 20:07:25');
 
 -- --------------------------------------------------------
 
@@ -56,6 +56,7 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
   `full_name` varchar(100) NOT NULL,
+  `avatar` varchar(255) DEFAULT NULL,
   `created_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -63,12 +64,12 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `full_name`, `created_at`) VALUES
-(1, 'admin01', 'Paulo Delas Armas', '2026-10-09 20:07:25'),
-(2, 'cashier01', 'Angela Ramos', '2026-10-09 20:07:25'),
-(3, 'cashier02', 'Miguel Flores', '2026-10-09 20:07:25'),
-(4, 'staff01', 'Sophia Cruz', '2026-10-09 20:07:25'),
-(5, 'manager01', 'Daniel Santos', '2026-10-09 20:07:25');
+INSERT INTO `users` (`id`, `username`, `full_name`, `avatar`, `created_at`) VALUES
+(1, 'admin01', 'Paulo Delas Armas', NULL, '2026-10-09 20:07:25'),
+(2, 'cashier01', 'Angela Ramos', NULL, '2026-10-09 20:07:25'),
+(3, 'cashier02', 'Miguel Flores', NULL, '2026-10-09 20:07:25'),
+(4, 'staff01', 'Sophia Cruz', NULL, '2026-10-09 20:07:25'),
+(5, 'manager01', 'Daniel Santos', '1791556394_9988f5015e6489670114_300x300.png', '2026-10-09 20:07:25');
 
 --
 -- Indexes for dumped tables
