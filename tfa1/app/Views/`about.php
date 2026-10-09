@@ -1,16 +1,17 @@
 <section class="page">
-    <h1><?= esc($heading) ?></h1>
-    <p><?= esc($message) ?></p>
+    <h1>About the POS System</h1>
 
-    <h2>How the pages work</h2>
+    <p>
+        This is a basic four-page website created using CodeIgniter 4.
+    </p>
 
-    <ul>
-        <li>The routes recognize the requested URLs.</li>
-        <li>The controller decides which view to load.</li>
-        <li>The views display the content to the visitor.</li>
-    </ul>
+    <p>
+        The project demonstrates how routes, controllers, models, and
+        views work together in an MVC application.
+    </p>
 
-    <a class="button" href="<?= site_url('/') ?>">
-        Return to Home
-    </a>
+    <p>
+        The Customer Accounts and User Accounts pages retrieve their
+        records from a MySQL database using CodeIgniter 4 models.
+    </p>
 </section>
