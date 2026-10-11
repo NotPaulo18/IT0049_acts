@@ -22,3 +22,11 @@ $routes->get('users/new', 'Users::new');
 $routes->post('users', 'Users::create');
 $routes->get('users/(:num)/edit', 'Users::edit/$1');
 $routes->post('users/(:num)', 'Users::update/$1');
+
+$routes->get('login', 'Auth::login');
+$routes->post('login', 'Auth::attempt');
+$routes->get('logout', 'Auth::logout');
+
+$routes->get('login', 'Auth::login');
+$routes->post('login', 'Auth::attempt');
+$routes->get('logout', 'Auth::logout');

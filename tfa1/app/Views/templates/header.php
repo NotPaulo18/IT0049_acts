@@ -44,6 +44,12 @@
             color: #60a5fa;
         }
 
+        .session-user {
+            margin-right: 20px;
+            color: #93c5fd;
+            font-weight: bold;
+        }
+
         main {
             margin: 30px auto;
             max-width: 1000px;
@@ -95,6 +101,20 @@
             <a href="<?= site_url('about') ?>">About</a>
             <a href="<?= site_url('customers') ?>">Customer Accounts</a>
             <a href="<?= site_url('users') ?>">User Accounts</a>
+
+            <?php if (session()->get('isLoggedIn')): ?>
+                <span class="session-user">
+                    Signed in as
+                    <?= esc(
+                        session()->get('full_name')
+                        ?? session()->get('username')
+                    ) ?>
+                </span>
+
+                <a href="<?= site_url('logout') ?>">Logout</a>
+            <?php else: ?>
+                <a href="<?= site_url('login') ?>">Login</a>
+            <?php endif; ?>
         </nav>
     </header>
 
